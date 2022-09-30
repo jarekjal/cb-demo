@@ -1,0 +1,16 @@
+server:
+  port: 8034
+
+#debug: true
+
+app:
+  couchbase:
+    url: "couchbase://127.0.0.1"
+    user: "Administrator"
+    password: "admin123"
+    bucket: "LearningCouch"
+# CREATE PRIMARY INDEX `primary` ON `LearningCouch`.`dev`.`person`;
+
+logging:
+  level:
+    org.springframework.data.couchbase.core: TRACE
